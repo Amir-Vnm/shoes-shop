@@ -9,7 +9,7 @@ function SpecialOffers( { products, onAddToCart
   const scrollContainerRef = useRef() ;
     return(
         <>
-     <h2 className=" text-shadow-lg/30 font-title md:text-4xl text-2xl whitespace-nowrap text-blue-500 border-t-1 border-b-1   md:ml-auto md:mr-auto md:mt-18 mt-4 pt-1 md:pt-3 md:pl-6 mb-2 md:mb-10 w-full md:w-5/6 "> Special Offers 20% </h2> 
+     <h2 className=" text-shadow-lg/30 font-title md:text-4xl text-2xl whitespace-nowrap text-blue-500 border-t-1 border-b-1    md:ml-auto md:mr-auto md:mt-18 mt-4 pt-1 md:pt-3 md:pl-6 mb-2 md:mb-10 w-full md:w-5/6 "> Special Offers 20% </h2> 
 
         <section className=" relative flex flex-row md:w-[85%] md:gap-x-20 justify-center md:ml-40">
                  
