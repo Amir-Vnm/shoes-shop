@@ -8,7 +8,7 @@ import Oxford from "./images/oxfordicon.png"
 function Categories() {
     return(
         <section className=" flex flex-row md:w-5/6 md:h-20 md:gap-x-24 justify-center mt-6 md:mt-8 md:ml-27">
-<h2 className="text-xl md:font-normal   md:text-5xl text-blue-950 font-title border-t-1 border-b-1 md:mt-2 pt-8  md:pt-2 text-shadow-lg/50 text-shadow-sky-300  ">Categories</h2>
+<h2 className="text-xl md:font-normal   md:text-5xl text-blue-950 font-title border-t-1 border-b-1 md:mt-2 pt-8  md:pt-2 text-shadow-lg/20 text-shadow-sky-300  ">Categories</h2>
 <Link className=" hover:scale-110 transition text-sm md:text-lg text-white md:w-38 md:h-31 border-gray-600 border p-2 text-center " to="/Running"> <img className=" md:w-19 md:h-19 w-12 h-12 ml-auto mr-auto" src={RunningIcon} alt="running shoes" />
  <p className=  " bg-gray-600 text-amber-300 rounded">Running Shoes</p></Link>
 

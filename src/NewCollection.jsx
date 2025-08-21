@@ -16,7 +16,7 @@ function NewCollection({products, onAddToCart}) {
 
  
  <div className="flex flex-row justify-between   md:flex-col md:border-t-1 md:border-r-1 md:mr-10 ">
-  <h1 className="md:text-5xl text-2xl text-blue-950 font-title text-shadow-lg/60 text-shadow-sky-300  ">New <br />Collection</h1>
+  <h1 className="md:text-5xl text-2xl text-blue-950 font-title text-shadow-lg/20 text-shadow-sky-300  ">New <br />Collection</h1>
   <button className=" hidden md:block mt-16 text-2xl text-white md:self-start border-black border-2  rounded-lg 
   cursor-pointer p-1 bg-gray-600 hover:bg-gradient-to-l from-gray-500 to-white hover:text-black">
     BuyNow</button>
