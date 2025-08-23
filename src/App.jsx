@@ -11,19 +11,12 @@ import Sneakers from './Sneakers'
 import About from './About'
 import Contact from './Contact'
 import RandomItems from './RandomItems'
+import Subtitle from './Subtitle'
+import Footer from './Footer'
 
 
 
 function App() {
-
-
-
-
-
-
-
-
-
 
 
 const [cartItems , setCartItems] = useState( ()=> {
@@ -57,16 +50,14 @@ const handleDelete = (id) => {
 <Header cartItems={cartItems} onDelete={handleDelete} />
 
 <div className=' hidden md:block  md:static absolute  -ml-1.5 w-full md:w-5/6 h-0.5
- bg-black md:ml-auto md:mr-auto mt-0 md:mb-12  bg-gradient-to-b from-white to-blue-800'></div>
-
+ bg-black md:ml-auto md:mr-auto mt-0   bg-gradient-to-b from-white to-blue-800'></div>
+ 
+ <div className='md:flex hidden' ><Subtitle /></div>
 
 
 <Routes>
 <Route
-    path="/"
-    element={ 
-    <>
-<NewCollection products={ShoesData}  onAddToCart={handleAddToCart} />
+    path="/" element={ <> <NewCollection products={ShoesData}  onAddToCart={handleAddToCart} />
 
 <div className='  w-5/6 h-0.5 bg-black ml-auto mr-auto mt-15  md:mt-25 bg-gradient-to-b from-white to-black'></div>
 
@@ -74,14 +65,19 @@ const handleDelete = (id) => {
 <SpecialOffers products={ShoesData} onAddToCart={handleAddToCart} />
 </>  }/>
 
+
+
+
  <Route path="/Running" element={<Running products={ShoesData} onAddToCart={handleAddToCart} />} />
  <Route path="/Sneakers" element={<Sneakers products={ShoesData} onAddToCart={handleAddToCart} />} />
-
  <Route path='about' element={<About />} />
  <Route path='Contact' element={<Contact />} />
  <Route path='RandomItems' element={<RandomItems onAddToCart={handleAddToCart} />} />
-</Routes>
+ 
 
+ 
+</Routes>
+<Footer />
 
 </>)}
 
